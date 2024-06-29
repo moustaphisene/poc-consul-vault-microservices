@@ -27,5 +27,12 @@ Soit en repo local ou distant
 
 #4 Informer les ms ou il doit aller chercher les config
 
+#5 Mise en place de vault pour la gestion des secret
+
+Installer vault
+Puis démarer vault avec la commande suivante:
+
+vault server -dev
+
 
 

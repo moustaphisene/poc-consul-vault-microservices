@@ -9,14 +9,20 @@
         <outputRelativeToContentRoot value="true" />
         <module name="config-service" />
         <module name="inventory-service" />
-        <module name="order-service" />
         <module name="customer-service" />
         <module name="gateway-service" />
+        <module name="order-service" />
+        <module name="billing-service" />
       </profile>
     </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="bp-billing-service" target="22" />
+    </bytecodeTargetLevel>
   </component>
   <component name="JavacSettings">
     <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="billing-service" options="-parameters" />
+      <module name="bp-billing-service" options="-parameters" />
       <module name="config-service" options="-parameters" />
       <module name="customer-service" options="-parameters" />
       <module name="gateway-service" options="-parameters" />
